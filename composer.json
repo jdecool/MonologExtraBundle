@@ -1,0 +1,30 @@
+{
+    "name": "jdecool/monolog-extra-bundle",
+    "description": "This bundle add some extra processor for Symfony usage",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "keywords": ["symfony", "monolog", "security", "session", "processor"],
+    "authors": [
+        {
+            "name": "Jérémy DECOOL",
+            "email": "github@jdecool.fr"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "symfony/framework-bundle": "~2.6|~3.0"
+    },
+    "require-dev": {
+        "atoum/atoum": "^2.4",
+        "atoum/stubs": "^2.2",
+        "symfony/http-foundation": "~2.6|~3.0",
+        "symfony/security": "~2.6|~3.0"
+    },
+    "suggest": {
+        "symfony/security": "For using the SecurityProcessor",
+        "symfony/http-foundation": "For using the SessionProcessor"
+    },
+    "autoload": {
+        "psr-4": { "JDecool\\Bundle\\MonologExtraBundle\\": "" }
+    }
+}

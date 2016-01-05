@@ -1,0 +1,10 @@
+services:
+    monolog.processor.sf_security:
+        class: JDecool\Bundle\MonologExtraBundle\Processor\SecurityProcessor
+        arguments:
+            - @security.token_storage
+
+    monolog.processor.sf_session:
+        class: JDecool\Bundle\MonologExtraBundle\Processor\SessionProcessor
+        arguments:
+            - @session
